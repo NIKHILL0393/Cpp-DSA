@@ -1,12 +1,30 @@
 #include<iostream>
+using namespace std;
 int main(){
-    int x,y;
-    int sum;
-    std::cout<<"first number";
-    cin>>x;
-    std::cout<<"second number";
-    cin>>y;
-    sum=x+y;
-    cout<<"sum is :"<< sum;
-    return 0;
+   int a, b;
+
+   cout<<"value of a"<<endl;
+   cin>>a;
+
+   cout<<"value of b"<<endl;
+   cin>>b;
+
+   char op;
+   cout<<"operation to be done"<<endl;
+   cin>>op;
+
+   switch(op){
+
+    case '+':cout<<(a+b)<<endl;
+             break;
+    case '-':cout<<(a-b)<<endl;
+             break;
+    case '*':cout<<(a*b)<<endl;
+             break;   
+    case '/':cout<<(a/b)<<endl;
+             break;  
+
+    default :cout<<"please enter correct operation"<<endl;
+
+   }
 }
